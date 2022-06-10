@@ -45,6 +45,7 @@
 
 ## Table of Contents:
 	textexpressions
+	lambdas
 	README.md file
 	.gitignore file
 	
