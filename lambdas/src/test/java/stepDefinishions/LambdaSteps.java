@@ -1,12 +1,7 @@
 package stepDefinishions;
+import io.cucumber.java8.En;
 
-import io.cucumber.java.af.En;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-
-import java.lang.annotation.Annotation;
-
-public class LambdaSteps {
+public class LambdaSteps implements En {
 
     public LambdaSteps() {
         Given("^I add 1 and 2$", () -> {
