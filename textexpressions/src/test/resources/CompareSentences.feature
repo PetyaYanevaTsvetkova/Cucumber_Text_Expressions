@@ -1,4 +1,5 @@
 # tests created by: Petyq Yaneva-Tsvetkova
+  @CompareSentences
 Feature:  test the areSentencesEqual() method from StringHelper class
 
   Background:
