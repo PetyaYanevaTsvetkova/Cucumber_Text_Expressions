@@ -15,7 +15,8 @@ public class CompareWordsSteps {
 
     @ParameterType("true|false")
     public boolean aBoolean(String booleanInput) {
-        return Boolean.parseBoolean(booleanInput);
+        boolean b = Boolean.parseBoolean(booleanInput);
+        return b;
     }
 
     @Given("stringHelper case sensitive is set on: {aBoolean}")
@@ -37,7 +38,8 @@ public class CompareWordsSteps {
     public void verificationOfTheWordsAreEqual() {
         if (isCaseSensitive) {
             System.out.println("The words are not equal");
-            Assertions.assertFalse(StringHelper.areWordsEqual(firstWord,secondWord,isCaseSensitive));
+            Assertions.assertFalse(StringHelper.areWordsEqual(firstWord, secondWord, isCaseSensitive),
+                    "Test fails because the words are equal:" + firstWord + " " + secondWord);
         } else {
             System.out.println("Words are equal");
             Assertions.assertTrue(StringHelper.areWordsEqual(firstWord, secondWord, isCaseSensitive));

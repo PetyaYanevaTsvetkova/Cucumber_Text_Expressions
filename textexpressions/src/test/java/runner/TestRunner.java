@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources",
         glue = "stepDefinitions",
-        tags = "@CompareSentences")
+        tags = "@CompareWords")
 public class TestRunner {
 }
