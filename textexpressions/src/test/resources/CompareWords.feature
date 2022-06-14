@@ -3,8 +3,8 @@
 @CompareWords
 Feature:test the areWordsEqual() method
 
- # Background:
-  #  * stringHelper case sensitive is set on: true
+  Background:
+    * stringHelper case sensitive is set on: false
 
 
     Scenario: Test if two words are equals

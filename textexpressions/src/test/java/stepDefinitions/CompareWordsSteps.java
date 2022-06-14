@@ -37,12 +37,11 @@ public class CompareWordsSteps {
     @Then("Verification if the words are equal")
     public void verificationOfTheWordsAreEqual() {
         if (isCaseSensitive) {
-            System.out.println("The words are not equal");
             Assertions.assertFalse(StringHelper.areWordsEqual(firstWord, secondWord, isCaseSensitive),
-                    "Test fails because the words are equal:" + firstWord + " " + secondWord);
+                    "Test fails because the words are equal: " + firstWord + " " + secondWord);
         } else {
-            System.out.println("Words are equal");
-            Assertions.assertTrue(StringHelper.areWordsEqual(firstWord, secondWord, isCaseSensitive));
+            Assertions.assertTrue(StringHelper.areWordsEqual(firstWord, secondWord, isCaseSensitive),
+                    "Test fails because the words are not equal: " + firstWord + " " + secondWord);
         }
     }
 }

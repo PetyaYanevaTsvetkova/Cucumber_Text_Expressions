@@ -35,13 +35,13 @@ public class CompareSentencesSteps {
     @Then("Verify if sentences are equal")
     public void verifyIfSentencesAreEqual() {
         if (isCaseSensitive) {
-            System.out.println("Sentences are not equal");
             Assertions.assertFalse(StringHelper.areSentencesEqual
-                    (firstSentence, secondSentence, isCaseSensitive));
+                            (firstSentence, secondSentence, isCaseSensitive),
+                    "The test fail: Sentences are equal");
         } else {
-            System.out.println("Sentences are equal");
             Assertions.assertTrue(StringHelper.areSentencesEqual
-                    (firstSentence, secondSentence, isCaseSensitive));
+                            (firstSentence, secondSentence, isCaseSensitive),
+                    "Test fail: Sentences are not equal");
         }
     }
 }
