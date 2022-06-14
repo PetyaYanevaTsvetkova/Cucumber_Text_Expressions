@@ -1,4 +1,6 @@
 # tests created by: Petyq Yaneva-Tsvetkova
+
+  @WordAndCharCount
 Feature: Word and char count of a text
 
   Scenario: Verify the word count

@@ -1,4 +1,4 @@
-package stepDefinishions;
+package stepDefinitions;
 import io.cucumber.java8.En;
 
 public class LambdaSteps implements En {

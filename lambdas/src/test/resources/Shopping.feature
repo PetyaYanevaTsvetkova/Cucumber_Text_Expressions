@@ -1,4 +1,6 @@
 # tests created by: Petyq Yaneva-Tsvetkova
+
+  @Shopping
 Feature: Shopping
 
   Scenario: Track my budget

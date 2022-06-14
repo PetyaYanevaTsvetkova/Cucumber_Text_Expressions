@@ -1,4 +1,4 @@
-package stepDefinishions;
+package stepDefinitions;
 
 import helper.StringHelper;
 import io.cucumber.java.en.Given;
